@@ -1,0 +1,7 @@
+Value INERFACE (\S+)
+Value IP (\S+)
+Value STATUS (up|down|administratively down)
+Value PROTOCOL (up|down)
+
+Start
+  ^${INERFACE}\s+${IP}\s+\w+\s+\w+\s+${STATUS}\s+${PROTOCOL} -> Record
